@@ -1,1 +1,16 @@
+import sys
 
+def main():
+    calificaciones = [0] * 5  
+
+    for i in range(5):
+        try:
+            calificaciones[i] = int(input(f"Captura la calificación {i + 1}: "))
+        except ValueError:
+            print("Error: Ingresa un número válido.")
+            sys.exit(1)  
+
+    print("Calificaciones capturadas:", calificaciones)
+
+if __name__ == "__main__":
+    main()
