@@ -1,0 +1,15 @@
+def invertir_lista(lista):
+    pila = []  # Creamos una pila vacía
+    
+    for numero in lista:
+        pila.append(numero)
+    
+    lista_invertida = []
+    while pila:
+        lista_invertida.append(pila.pop())
+    
+    return lista_invertida
+
+numeros = [1, 2, 3, 4, 5]
+resultado = invertir_lista(numeros)
+print(f"Lista invertida: {resultado}")
